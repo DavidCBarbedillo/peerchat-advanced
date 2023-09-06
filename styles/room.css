@@ -1,3 +1,40 @@
+/* Add this to your CSS file */
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+  position: relative;
+}
+
+#room__container {
+  padding: 16px;
+}
+
+#embedded-website-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Add a background color to separate it from the content above */
+  z-index: 1; /* Ensure it's above the footer */
+}
+
+#embedded-website {
+  max-width: 100%;
+  height: auto; /* Responsive sizing for the embedded website */
+}
+
+#footer {
+  /* Add styles for your footer here */
+}
+
+
+
+
 .container {
   margin-top: 74px;
   height: clac(100vh - 74px);

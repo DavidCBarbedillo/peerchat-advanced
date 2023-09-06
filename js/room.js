@@ -74,3 +74,28 @@ let hideDisplayFrame = () => {
 }
 
 displayFrame.addEventListener('click', hideDisplayFrame)
+
+
+
+
+
+// room.js
+
+// Function to load the embedded website
+function loadEmbeddedWebsite() {
+  const embeddedWebsiteContainer = document.getElementById('embedded-website');
+
+  // Create an iframe element
+  const iframe = document.createElement('iframe');
+  iframe.src = 'https://aipainter.studio/'; // Replace with the URL of the website you want to embed
+
+  // Set iframe attributes as needed
+  iframe.width = '100%';
+  iframe.height = '400px'; // Adjust the height as needed
+
+  // Append the iframe to the container
+  embeddedWebsiteContainer.appendChild(iframe);
+}
+
+// Call the function to load the embedded website
+loadEmbeddedWebsite();
